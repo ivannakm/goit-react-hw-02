@@ -1,0 +1,8 @@
+.button {
+  padding: 10px;
+  border: 2px solid blueviolet;
+  border-radius: 16px;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
