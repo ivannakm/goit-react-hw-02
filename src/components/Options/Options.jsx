@@ -2,7 +2,7 @@ import css from "./Options.module.css";
 
 const Options = ({ options, onFeedback, onReset, total }) => {
   return (
-    <div>
+    <div className={css.container}>
       {options.map((option) => (
         <button
           className={css.button}
@@ -14,7 +14,11 @@ const Options = ({ options, onFeedback, onReset, total }) => {
       ))}
 
       {total > 0 && (
-        <button onClick={onReset} style={{ marginLeft: "10px", color: "red" }}>
+        <button
+          className={css.button}
+          onClick={onReset}
+          style={{ marginLeft: "10px", backgroundColor: "red" }}
+        >
           Reset
         </button>
       )}

@@ -13,7 +13,7 @@ function App() {
     bad: 0,
   });
 
-  // ✅ 1. useEffect для зчитування з localStorage при старті
+  //1. useEffect для зчитування з localStorage при старті
   useEffect(() => {
     const storedData = localStorage.getItem(FEEDBACK_STORAGE_KEY);
     if (storedData) {
@@ -21,7 +21,7 @@ function App() {
     }
   }, []);
 
-  // ✅ 2. useEffect для запису в localStorage при зміні click
+  //2. useEffect для запису в localStorage при зміні click
   useEffect(() => {
     localStorage.setItem(FEEDBACK_STORAGE_KEY, JSON.stringify(click));
   }, [click]);

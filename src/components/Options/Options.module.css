@@ -1,6 +1,14 @@
+.container {
+  text-align: center;
+  margin-bottom: 20px;
+}
 .button {
   padding: 10px;
   border: 2px solid blueviolet;
+  cursor: pointer;
+  margin: 5px;
+  background-color: #f0e6ff;
+  color: #4b0082;
   border-radius: 16px;
   &::first-letter {
     text-transform: uppercase;
